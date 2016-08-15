@@ -6,17 +6,17 @@ branches:
 
 environment:
   BaseVersion: 1.0.0
-  PackageVersion: "1.0.0-ci$(APPVEYOR_BUILD_NUMBER)"
+  NugetVersion: "1.0.0-ci$(APPVEYOR_BUILD_NUMBER)"
   
 cache:
-  - packages -> src\**\packages.config
+  - src\packages -> src\**\packages.config
 
 assembly_info:
   patch: true
   file: 'src\**\AssemblyInfo.*'
   assembly_version: "$(BaseVersion)"
   assembly_file_version: "$(BaseVersion)"
-  assembly_informational_version: "$(PackageVersion)"
+  assembly_informational_version: "$(NugetVersion)"
 
 nuget:
   project_feed: true
