@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <metadata xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <id>SpecFlow.Autofac</id>
+    <version>1.0.0-localdev</version>
+    <title>SpecFlow Autofac integration plugin</title>
+    <authors>Gaspar Nagy, Spec Solutions</authors>
+    <owners>Gaspar Nagy, Spec Solutions</owners>
+    <description>SpecFlow plugin that enables to use Autofac for resolving test dependencies.</description>
+    <summary>SpecFlow plugin that enables to use Autofac for resolving test dependencies.</summary>
+    <language>en-US</language>
+    <projectUrl>https://github.com/gasparnagy/SpecFlow.Autofac</projectUrl>
+    <licenseUrl>https://raw.githubusercontent.com/gasparnagy/SpecFlow.Autofac/master/LICENSE</licenseUrl>
+    <iconUrl>http://go.specflow.org/specflow-nuget-icon</iconUrl>
+    <copyright>Copyright © 2016 Gaspar Nagy, Spec Solutions</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <tags>specflow autofac di dependency injection</tags>
+    <dependencies>
+      <dependency id="SpecFlow" version="2.1.0" />
+      <dependency id="Autofac" version="4.0.0" />
+    </dependencies>
+  </metadata>
+</package>

@@ -1,0 +1,15 @@
+﻿<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" >
+  <ItemGroup Label="SpecFlow.Autofac">
+    <additionalFiles Include="$(MSBuildThisFileDirectory)\..\..\SpecFlow.Autofac.SpecFlowPlugin\bin\$(Configuration)\SpecFlow.Autofac.SpecFlowPlugin.dll">
+      <targetFolder>SpecFlow.Autofac\lib\net45</targetFolder>
+    </additionalFiles>
+
+    <additionalFiles Include="$(MSBuildThisFileDirectory)\..\..\SpecFlow.Autofac.SpecFlowPlugin\bin\$(Configuration)\SpecFlow.Autofac.SpecFlowPlugin.pdb">
+      <targetFolder>SpecFlow.Autofac\lib\net45</targetFolder>
+    </additionalFiles>
+
+    <additionalFiles Include="$(MSBuildThisFileDirectory)\App.config.transform">
+      <targetFolder>SpecFlow.Autofac\content</targetFolder>
+    </additionalFiles>
+  </ItemGroup>
+</Project>
