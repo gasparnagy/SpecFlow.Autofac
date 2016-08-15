@@ -1,0 +1,37 @@
+version: build{build}
+
+branches:
+  only:
+  - master
+
+environment:
+  BaseVersion: 1.0.0
+  PackageVersion: "1.0.0-ci$(APPVEYOR_BUILD_NUMBER)"
+  
+cache:
+  - packages -> src\**\packages.config
+
+assembly_info:
+  patch: true
+  file: 'src\**\AssemblyInfo.*'
+  assembly_version: "$(BaseVersion)"
+  assembly_file_version: "$(BaseVersion)"
+  assembly_informational_version: "$(PackageVersion)"
+
+nuget:
+  project_feed: true
+  disable_publish_on_pr: true
+
+configuration: Release
+
+before_build:
+  - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
+  - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
+  - nuget-restore
+
+build:
+  project: src\SpecFlow.Autofac.sln
+  verbosity: normal
+
+artifacts:
+- path: '\NuGetPackages\bin\*.nupkg'
