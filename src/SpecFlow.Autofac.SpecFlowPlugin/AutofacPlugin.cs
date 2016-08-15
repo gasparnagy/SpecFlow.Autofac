@@ -1,11 +1,13 @@
 ﻿using System;
 using System.Linq;
+using Autofac;
+using SpecFlow.Autofac;
 using TechTalk.SpecFlow.Infrastructure;
 using TechTalk.SpecFlow.Plugins;
 
-[assembly: RuntimePlugin(typeof(Autofac.SpecFlowPlugin.AutofacPlugin))]
+[assembly: RuntimePlugin(typeof(AutofacPlugin))]
 
-namespace Autofac.SpecFlowPlugin
+namespace SpecFlow.Autofac
 {
     public class AutofacPlugin : IRuntimePlugin
     {

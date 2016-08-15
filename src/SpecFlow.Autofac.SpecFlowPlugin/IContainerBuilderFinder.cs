@@ -1,6 +1,7 @@
 using System;
+using Autofac;
 
-namespace Autofac.SpecFlowPlugin
+namespace SpecFlow.Autofac
 {
     public interface IContainerBuilderFinder
     {

@@ -7,8 +7,8 @@
     <ProjectGuid>{1EEFF87C-9EC4-41C5-83B1-6ADE8BAA1E12}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Autofac.SpecFlowPlugin</RootNamespace>
-    <AssemblyName>Autofac.SpecFlowPlugin</AssemblyName>
+    <RootNamespace>SpecFlow.Autofac</RootNamespace>
+    <AssemblyName>SpecFlow.Autofac.SpecFlowPlugin</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

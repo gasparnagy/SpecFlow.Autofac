@@ -1,9 +1,10 @@
 using System;
 using System.Linq;
 using System.Reflection;
+using Autofac;
 using TechTalk.SpecFlow.Bindings;
 
-namespace Autofac.SpecFlowPlugin
+namespace SpecFlow.Autofac
 {
     public class ContainerBuilderFinder : IContainerBuilderFinder
     {

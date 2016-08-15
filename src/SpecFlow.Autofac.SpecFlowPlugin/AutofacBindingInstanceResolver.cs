@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Linq;
+using Autofac;
 using BoDi;
 using TechTalk.SpecFlow.Infrastructure;
 
-namespace Autofac.SpecFlowPlugin
+namespace SpecFlow.Autofac
 {
     public class AutofacBindingInstanceResolver : IBindingInstanceResolver
     {

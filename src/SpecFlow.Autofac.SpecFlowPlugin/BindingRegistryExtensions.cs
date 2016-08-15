@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
-using System.Text;
-using System.Threading.Tasks;
 using TechTalk.SpecFlow.Bindings;
 using TechTalk.SpecFlow.Bindings.Reflection;
 
-namespace Autofac.SpecFlowPlugin
+namespace SpecFlow.Autofac
 {
     public static class BindingRegistryExtensions
     {
