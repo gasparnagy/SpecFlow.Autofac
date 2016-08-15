@@ -31,7 +31,7 @@ before_build:
   - nuget-restore
 
 build:
-  project: src\SpecFlow.Autofac.sln
+  project: SpecFlow.Autofac.sln
   verbosity: normal
 
 artifacts:
