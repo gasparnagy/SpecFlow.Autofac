@@ -29,9 +29,10 @@ before_build:
   - appveyor DownloadFile https://dist.nuget.org/win-x86-commandline/latest/nuget.exe
   - appveyor DownloadFile https://raw.githubusercontent.com/appveyor/ci/master/scripts/nuget-restore.cmd
   - nuget-restore
+  - cd ..
 
 build:
-  project: SpecFlow.Autofac.sln
+  project: src\SpecFlow.Autofac.sln
   verbosity: normal
 
 artifacts:
