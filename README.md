@@ -9,6 +9,8 @@ License: Apache (https://github.com/gasparnagy/SpecFlow.Autofac/blob/master/LICE
 
 See my blog post for more information and background, you can also look at the complete example at https://github.com/gasparnagy/SpecFlow.Autofac/tree/master/sample/MyCalculator.
 
+[![Build status](https://ci.appveyor.com/api/projects/status/oyxln9r52x9uamim/branch/master?svg=true)](https://ci.appveyor.com/project/gasparnagy/specflow-autofac/branch/master)
+
 ## Usage
 
 Install plugin from NuGet into your SpecFlow project.
