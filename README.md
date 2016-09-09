@@ -1,4 +1,4 @@
-# SpecFlow.Autofac
+﻿# SpecFlow.Autofac
 SpecFlow plugin for using Autofac as a dependency injection framework for step definitions.
 
 Currently supports
@@ -39,3 +39,13 @@ A typical dependency builder method probably looks like this:
       
       return builder;
     }
+
+## Release History
+
+### v1.0.1
+
+* Fix missing assembly from NuGet package (build order issue)
+
+### v1.0.0
+
+* Initial release
