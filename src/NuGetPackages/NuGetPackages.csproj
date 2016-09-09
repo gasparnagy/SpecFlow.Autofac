@@ -48,12 +48,6 @@
     <None Include="SpecFlow.Autofac\SpecFlow.Autofac.nuspec" />
     <None Include="SpecFlow.Autofac\SpecFlow.Autofac.nuspec.props" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\SpecFlow.Autofac.SpecFlowPlugin\SpecFlow.Autofac.SpecFlowPlugin.csproj">
-      <Project>{1eeff87c-9ec4-41c5-83b1-6ade8baa1e12}</Project>
-      <Name>SpecFlow.Autofac.SpecFlowPlugin</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Import Condition="Exists('$(MSBuildProjectDirectory)\.build\build.props')" Project="$(MSBuildProjectDirectory)\.build\build.props" />
   <Import Condition="Exists('$(MSBuildProjectDirectory)\.build\build.targets')" Project="$(MSBuildProjectDirectory)\.build\build.targets" />
   <Import Project="..\packages\MSBuild.MSBBuildConvention.2.0.0\build\MSBuild.MSBBuildConvention.targets" Condition="Exists('..\packages\MSBuild.MSBBuildConvention.2.0.0\build\MSBuild.MSBBuildConvention.targets')" />

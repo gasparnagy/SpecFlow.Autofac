@@ -1,9 +1,12 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
-VisualStudioVersion = 14.0.24720.0
+VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGetPackages", "NuGetPackages\NuGetPackages.csproj", "{43BA6417-7539-416B-BAAE-F4DE05A49F2F}"
+	ProjectSection(ProjectDependencies) = postProject
+		{1EEFF87C-9EC4-41C5-83B1-6ADE8BAA1E12} = {1EEFF87C-9EC4-41C5-83B1-6ADE8BAA1E12}
+	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SpecFlow.Autofac.SpecFlowPlugin", "SpecFlow.Autofac.SpecFlowPlugin\SpecFlow.Autofac.SpecFlowPlugin.csproj", "{1EEFF87C-9EC4-41C5-83B1-6ADE8BAA1E12}"
 EndProject
