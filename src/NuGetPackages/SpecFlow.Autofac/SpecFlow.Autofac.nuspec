@@ -8,6 +8,7 @@
     <owners>Gaspar Nagy, Spec Solutions</owners>
     <description>SpecFlow plugin that enables to use Autofac for resolving test dependencies.</description>
     <summary>SpecFlow plugin that enables to use Autofac for resolving test dependencies.</summary>
+    <releaseNotes>See GitHub project page, https://github.com/gasparnagy/SpecFlow.Autofac#release-history</releaseNotes>
     <language>en-US</language>
     <projectUrl>https://github.com/gasparnagy/SpecFlow.Autofac</projectUrl>
     <licenseUrl>https://raw.githubusercontent.com/gasparnagy/SpecFlow.Autofac/master/LICENSE</licenseUrl>
