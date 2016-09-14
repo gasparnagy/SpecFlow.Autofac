@@ -3,7 +3,7 @@ SpecFlow plugin for using Autofac as a dependency injection framework for step d
 
 Currently supports
 * SpecFlow v2.1
-* Autofac v4.0 or above
+* Autofac v3.5.2 or above
 
 License: Apache (https://github.com/gasparnagy/SpecFlow.Autofac/blob/master/LICENSE)
 
@@ -41,6 +41,10 @@ A typical dependency builder method probably looks like this:
     }
 
 ## Release History
+
+### v1.0.2
+
+* Reduced the minimum Autofac version to 3.5.2 to target broader audience (PR#1 by @BlackstarSolar)
 
 ### v1.0.1
 
