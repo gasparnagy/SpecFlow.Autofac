@@ -7,6 +7,8 @@ Currently supports
 
 License: Apache (https://github.com/gasparnagy/SpecFlow.Autofac/blob/master/LICENSE)
 
+NuGet: https://www.nuget.org/packages/SpecFlow.Autofac
+
 See my blog post (http://gasparnagy.com/2016/08/specflow-tips-customizing-dependency-injection-with-autofac/) for more information and background, you can also look at the complete example at https://github.com/gasparnagy/SpecFlow.Autofac/tree/master/sample/MyCalculator.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/oyxln9r52x9uamim/branch/master?svg=true)](https://ci.appveyor.com/project/gasparnagy/specflow-autofac/branch/master)
