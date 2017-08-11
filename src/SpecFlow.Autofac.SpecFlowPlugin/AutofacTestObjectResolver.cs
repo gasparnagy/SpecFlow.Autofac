@@ -6,7 +6,7 @@ using TechTalk.SpecFlow.Infrastructure;
 
 namespace SpecFlow.Autofac
 {
-    public class AutofacBindingInstanceResolver : IBindingInstanceResolver
+    public class AutofacTestObjectResolver : ITestObjectResolver
     {
         public object ResolveBindingInstance(Type bindingType, IObjectContainer scenarioContainer)
         {
