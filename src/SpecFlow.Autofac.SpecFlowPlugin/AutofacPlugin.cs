@@ -15,7 +15,7 @@ namespace SpecFlow.Autofac
         {
             runtimePluginEvents.CustomizeGlobalDependencies += (sender, args) =>
             {
-                args.ObjectContainer.RegisterTypeAs<AutofacBindingInstanceResolver, IBindingInstanceResolver>();
+                args.ObjectContainer.RegisterTypeAs<AutofacTestObjectResolver, ITestObjectResolver>();
                 args.ObjectContainer.RegisterTypeAs<ContainerBuilderFinder, IContainerBuilderFinder>();
             };
 
