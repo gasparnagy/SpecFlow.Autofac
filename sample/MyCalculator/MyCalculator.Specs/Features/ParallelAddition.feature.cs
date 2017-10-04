@@ -17,17 +17,17 @@ namespace MyCalculator.Specs.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.2.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    public partial class AdditionFeature : Xunit.IClassFixture<AdditionFeature.FixtureData>, System.IDisposable
+    public partial class ParallelAdditionFeature : Xunit.IClassFixture<ParallelAdditionFeature.FixtureData>, System.IDisposable
     {
         
         private static TechTalk.SpecFlow.ITestRunner testRunner;
         
         private Xunit.Abstractions.ITestOutputHelper _testOutputHelper;
         
-#line 1 "Addition.feature"
+#line 1 "ParallelAddition.feature"
 #line hidden
         
-        public AdditionFeature(AdditionFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
+        public ParallelAdditionFeature(ParallelAdditionFeature.FixtureData fixtureData, Xunit.Abstractions.ITestOutputHelper testOutputHelper)
         {
             this._testOutputHelper = testOutputHelper;
             this.TestInitialize();
@@ -36,7 +36,7 @@ namespace MyCalculator.Specs.Features
         public static void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Addition", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Parallel Addition", "\tIn order to avoid silly mistakes\r\n\tAs a math idiot\r\n\tI want to be told the sum o" +
                     "f two numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
@@ -72,13 +72,13 @@ namespace MyCalculator.Specs.Features
             this.ScenarioTearDown();
         }
         
-        [Xunit.FactAttribute(DisplayName="Add two numbers")]
-        [Xunit.TraitAttribute("FeatureTitle", "Addition")]
-        [Xunit.TraitAttribute("Description", "Add two numbers")]
+        [Xunit.FactAttribute(DisplayName="Add two numbers parallel")]
+        [Xunit.TraitAttribute("FeatureTitle", "Parallel Addition")]
+        [Xunit.TraitAttribute("Description", "Add two numbers parallel")]
         [Xunit.TraitAttribute("Category", "mytag")]
-        public virtual void AddTwoNumbers()
+        public virtual void AddTwoNumbersParallel()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers", new string[] {
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Add two numbers parallel", new string[] {
                         "mytag"});
 #line 7
 this.ScenarioSetup(scenarioInfo);
@@ -94,9 +94,9 @@ this.ScenarioSetup(scenarioInfo);
             this.ScenarioCleanup();
         }
         
-        [Xunit.TheoryAttribute(DisplayName="More addition")]
-        [Xunit.TraitAttribute("FeatureTitle", "Addition")]
-        [Xunit.TraitAttribute("Description", "More addition")]
+        [Xunit.TheoryAttribute(DisplayName="More addition parallel")]
+        [Xunit.TraitAttribute("FeatureTitle", "Parallel Addition")]
+        [Xunit.TraitAttribute("Description", "More addition parallel")]
         [Xunit.InlineDataAttribute("50", "70", "120", new string[0])]
         [Xunit.InlineDataAttribute("51", "70", "121", new string[0])]
         [Xunit.InlineDataAttribute("52", "70", "122", new string[0])]
@@ -107,9 +107,9 @@ this.ScenarioSetup(scenarioInfo);
         [Xunit.InlineDataAttribute("57", "70", "127", new string[0])]
         [Xunit.InlineDataAttribute("58", "70", "128", new string[0])]
         [Xunit.InlineDataAttribute("59", "70", "129", new string[0])]
-        public virtual void MoreAddition(string a, string b, string result, string[] exampleTags)
+        public virtual void MoreAdditionParallel(string a, string b, string result, string[] exampleTags)
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("More addition", exampleTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("More addition parallel", exampleTags);
 #line 13
 this.ScenarioSetup(scenarioInfo);
 #line 14
@@ -131,12 +131,12 @@ this.ScenarioSetup(scenarioInfo);
             
             public FixtureData()
             {
-                AdditionFeature.FeatureSetup();
+                ParallelAdditionFeature.FeatureSetup();
             }
             
             void System.IDisposable.Dispose()
             {
-                AdditionFeature.FeatureTearDown();
+                ParallelAdditionFeature.FeatureTearDown();
             }
         }
     }
