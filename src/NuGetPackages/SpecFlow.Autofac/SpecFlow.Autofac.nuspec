@@ -17,7 +17,7 @@
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <tags>specflow autofac di dependency injection</tags>
     <dependencies>
-      <dependency id="SpecFlow" version="2.1.0" />
+      <dependency id="SpecFlow" version="2.2.1" />
       <dependency id="Autofac" version="3.5.2" />
     </dependencies>
   </metadata>
