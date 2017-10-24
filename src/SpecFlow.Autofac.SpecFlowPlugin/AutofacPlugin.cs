@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Diagnostics;
 using System.Linq;
 using Autofac;
 using SpecFlow.Autofac;
@@ -15,8 +16,16 @@ namespace SpecFlow.Autofac
         {
             runtimePluginEvents.CustomizeGlobalDependencies += (sender, args) =>
             {
-                args.ObjectContainer.RegisterTypeAs<AutofacTestObjectResolver, ITestObjectResolver>();
-                args.ObjectContainer.RegisterTypeAs<ContainerBuilderFinder, IContainerBuilderFinder>();
+                // temporary fix for CustomizeGlobalDependencies called multiple times
+                // see https://github.com/techtalk/SpecFlow/issues/948
+                if (!args.ObjectContainer.IsRegistered<IContainerBuilderFinder>())
+                {
+                    args.ObjectContainer.RegisterTypeAs<AutofacTestObjectResolver, ITestObjectResolver>();
+                    args.ObjectContainer.RegisterTypeAs<ContainerBuilderFinder, IContainerBuilderFinder>();
+
+                    // workaround for parallel execution issue - this should be rather a feature in BoDi?
+                    args.ObjectContainer.Resolve<IContainerBuilderFinder>();
+                }
             };
 
             runtimePluginEvents.CustomizeScenarioDependencies += (sender, args) =>
