@@ -44,6 +44,11 @@ A typical dependency builder method probably looks like this:
 
 ## Release History
 
+### v1.1.0
+
+* Support SpecFlow v2.2.1 (thx to Zac Charles, @einsteine89)
+* Allow the container to resolve ScenarioContext, FeatureContext, TestThreadContext, IObjectContainer (by @djmnz)
+
 ### v1.0.2
 
 * Reduced the minimum Autofac version to 3.5.2 to target broader audience (PR#1 by @BlackstarSolar)
