@@ -4,6 +4,7 @@ using SpecFlow.Autofac;
 using TechTalk.SpecFlow;
 using TechTalk.SpecFlow.Infrastructure;
 using TechTalk.SpecFlow.Plugins;
+using TechTalk.SpecFlow.UnitTestProvider;
 
 [assembly: RuntimePlugin(typeof(AutofacPlugin))]
 
@@ -17,7 +18,7 @@ namespace SpecFlow.Autofac
     {
         private static Object _registrationLock = new Object();
 
-        public void Initialize(RuntimePluginEvents runtimePluginEvents, RuntimePluginParameters runtimePluginParameters)
+        public void Initialize(RuntimePluginEvents runtimePluginEvents, RuntimePluginParameters runtimePluginParameters, UnitTestProviderConfiguration unitTestProviderConfiguration)
         {
             runtimePluginEvents.CustomizeGlobalDependencies += (sender, args) =>
             {
