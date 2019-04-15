@@ -44,6 +44,10 @@ A typical dependency builder method probably looks like this:
 
 ## Release History
 
+### v1.2.0
+
+* Support SpecFlow v3.0 (thx to @jsiegmund)
+
 ### v1.1.0
 
 * Support SpecFlow v2.2.1 (thx to Zac Charles, @einsteine89)
