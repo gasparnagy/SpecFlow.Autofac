@@ -7,9 +7,5 @@
     <additionalFiles Include="$(MSBuildThisFileDirectory)\..\..\SpecFlow.Autofac.SpecFlowPlugin\bin\$(Configuration)\SpecFlow.Autofac.SpecFlowPlugin.pdb">
       <targetFolder>SpecFlow.Autofac\lib\net45</targetFolder>
     </additionalFiles>
-
-    <additionalFiles Include="$(MSBuildThisFileDirectory)\App.config.transform">
-      <targetFolder>SpecFlow.Autofac\content</targetFolder>
-    </additionalFiles>
   </ItemGroup>
 </Project>

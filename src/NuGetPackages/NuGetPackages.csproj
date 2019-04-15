@@ -40,7 +40,6 @@
     <None Include=".build\build.targets" />
     <None Include="Properties\build.props" />
     <None Include="publish_to_local.cmd" />
-    <None Include="SpecFlow.Autofac\App.config.transform" />
     <None Include="packages.config">
       <SubType>Designer</SubType>
     </None>
