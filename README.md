@@ -1,4 +1,9 @@
-﻿# SpecFlow.Autofac
+# SpecFlow.AutoFac is now part of SpecFlow!
+Sources for it are here: https://github.com/techtalk/SpecFlow/tree/master/Plugins/SpecFlow.Autofac.SpecFlowPlugin
+Please open Issues and Pull Request in the SpecFlow repro.
+ 
+ 
+# SpecFlow.Autofac
 SpecFlow plugin for using Autofac as a dependency injection framework for step definitions.
 
 Currently supports
